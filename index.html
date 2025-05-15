@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Happy Birthday Raisha</title>
+    <style>
+      /* Change font and animate headings */
+      #hero h1, #hero h6 {
+        font-family: 'Pacifico', cursive;
+        opacity: 0;
+        animation: fadeInUp 2s forwards;
+      }
+      #hero h1 {
+        .fade-word {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+      }
+      #hero h6 {
+        animation-delay: 1.2s;
+        font-size: 1.2rem;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="hero">
+        <h1>
+           <span class="fade-word" style="animation-delay: 0.2s;">🦋</span><br />
+      <span class="fade-word" style="animation-delay: 0.8s;">Happy</span>
+      <span class="fade-word" style="animation-delay: 1.4s;">Birthday</span>
+      <span class="fade-word" style="animation-delay: 2.0s;">Raisha</span>
+        <p style="margin-top: 20px;">
+      <span class="fade-word" style="animation-delay: 2.8s;">Hope</span>
+      <span class="fade-word" style="animation-delay: 3.1s;">you</span>
+      <span class="fade-word" style="animation-delay: 3.4s;">have</span>
+      <span class="fade-word" style="animation-delay: 3.7s;">a</span>
+      <span class="fade-word" style="animation-delay: 4.0s;">wonderful</span>
+      <span class="fade-word" style="animation-delay: 4.3s;">day</span>
+      <span class="fade-word" style="animation-delay: 4.6s;">at</span>
+      <span class="fade-word" style="animation-delay: 4.9s;">this</span>
+      <span class="fade-word" style="animation-delay: 5.2s;">magnificent</span>
+      <span class="fade-word" style="animation-delay: 5.5s;">moment!</span>
+    </p>
+    </h1>
+      </div>
+
+    <script type="module" src="script.js"></script>
+    <audio src="titli.mp3" autoplay loop></audio>
+    <script>
+      document.addEventListener('click', function playMusicOnce() {
+        const audio = document.querySelector('audio');
+        if (audio) audio.play();
+        document.removeEventListener('click', playMusicOnce);
+      });
+    </script>
+  </body>
+</html>
